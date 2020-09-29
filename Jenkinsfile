@@ -4,11 +4,11 @@ pipeline{
 
 stages{
 	
- stage('Git Clone SourceCode'){
+ stage('Check out source'){
 
  steps{
 
- git 'https://github.com/Neikl/salesforce-app-mig.git'
+ checkout scm
 
  }
 
