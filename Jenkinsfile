@@ -24,7 +24,7 @@ stages{
 
  }
 
- stage('Production Server status'){
+ stage('QA Server status'){
 
  steps{
 
