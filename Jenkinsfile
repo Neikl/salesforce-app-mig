@@ -14,11 +14,21 @@ stages{
 
  }
 
- stage('Running ANT scripts'){
+ stage('Retrieving Metadata'){
 
  steps{
 
- sh "ant retrieveUnpackaged -v && ant deployUnpackaged -v"
+ sh "ant retrieveUnpackaged -v"
+
+ }
+
+ }
+	
+ stage('Depoying to QA'){
+
+ steps{
+
+ sh "ant deployUnpackaged -v"
 
  }
 
