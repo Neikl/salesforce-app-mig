@@ -34,15 +34,15 @@ stages{
 
  }	
 	
- //stage('Chatter Notifier'){
+ stage('Chatter Notifier'){
 
- //steps{
+ steps{
 
- //chatterPost body: "This is a Chatter post from a pipeline! ${env.JOB_NAME} ${env.BUILD_DISPLAY_NAME}", credentialsId: 'team.sfdc.user'
+ chatterPost body: "This is a Chatter post from a pipeline! ${env.JOB_NAME} ${env.BUILD_DISPLAY_NAME}", credentialsId: 'team.sfdc.user'
 
- //}
+ }
 
- //} 
+ } 
  
  }
 
