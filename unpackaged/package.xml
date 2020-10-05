@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>test_pkg</fullName>
-    <description>tesing</description>
+    <fullName>test_pkg4</fullName>
     <types>
         <members>Digital_Mortgages</members>
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Account.Active__c</members>
+        <members>Account.CustomerPriority__c</members>
+        <members>Account.DOB__c</members>
+        <members>Account.Income_per_Annum__c</members>
+        <members>Account.Loan_Amount__c</members>
+        <members>Account.Loan_Type__c</members>
+        <members>Account.Mortgage_asset_value__c</members>
+        <members>Account.NumberofLocations__c</members>
+        <members>Account.Property_Type__c</members>
+        <members>Account.SLAExpirationDate__c</members>
+        <members>Account.SLASerialNumber__c</members>
+        <members>Account.SLA__c</members>
+        <members>Account.SSN__c</members>
+        <members>Account.UpsellOpportunity__c</members>
+        <members>Case.EngineeringReqNumber__c</members>
+        <members>Case.Loan_Amount__c</members>
+        <members>Case.Mortgage_asset_value__c</members>
+        <members>Case.PotentialLiability__c</members>
+        <members>Case.Product__c</members>
+        <members>Case.SLAViolation__c</members>
+        <members>Case.SSN__c</members>
+        <members>Case.Status1__c</members>
+        <members>Contact.Languages__c</members>
+        <members>Contact.Level__c</members>
+        <members>Goal.OrigGoalId__c</members>
+        <members>Lead.DOB__c</members>
+        <members>Lead.Income_per_Annum__c</members>
+        <members>Lead.Loan_Amount__c</members>
+        <members>Lead.Loan_Type__c</members>
         <members>Lead.Mortgage_asset_value__c</members>
+        <members>Lead.Property_Type__c</members>
+        <members>Lead.SSN__c</members>
+        <members>Metric.OrigMetricId__c</members>
+        <members>Opportunity.CC_Score__c</members>
+        <members>Opportunity.Co_lateral_Documents__c</members>
+        <members>Opportunity.Fixed_rate_of_Interest__c</members>
+        <members>Opportunity.Guarantor_DOB__c</members>
+        <members>Opportunity.Guarantor_Documents_submitted__c</members>
+        <members>Opportunity.Guarantor_Email__c</members>
+        <members>Opportunity.Guarantor_First_Name__c</members>
+        <members>Opportunity.Guarantor_Last_Name__c</members>
+        <members>Opportunity.Guarantor_Mobile__c</members>
+        <members>Opportunity.Guarantor_SSN__c</members>
+        <members>Opportunity.Other_Mortgage_Loans__c</members>
+        <members>Opportunity.Paycheck_stubs_from_last_30_days__c</members>
+        <members>Opportunity.Payments_Frequency__c</members>
+        <members>Opportunity.Process_Documentation__c</members>
+        <members>Opportunity.Reason__c</members>
+        <members>Opportunity.Tenure_in_years__c</members>
+        <members>Opportunity.TrackingNumber__c</members>
+        <members>Opportunity.W2_or_I_9_forms_from_past_2_years__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -19,7 +68,38 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>Account.Standard_Account_Duplicate_Rule</members>
+        <members>Contact.Standard_Contact_Duplicate_Rule</members>
+        <members>Lead.Standard_Lead_Duplicate_Rule</members>
+        <name>DuplicateRule</name>
+    </types>
+    <types>
+        <members>Account-Account %28Marketing%29 Layout</members>
+        <members>Account-Account %28Sales%29 Layout</members>
+        <members>Account-Account %28Support%29 Layout</members>
+        <members>Account-Account Layout</members>
+        <members>Campaign-Campaign Layout</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>Contact-Contact %28Marketing%29 Layout</members>
+        <members>Contact-Contact %28Sales%29 Layout</members>
+        <members>Contact-Contact %28Support%29 Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>ContactPointAddress-Contact Point Address Layout</members>
+        <members>ContactPointEmail-Contact Point Email Layout</members>
+        <members>ContactPointPhone-Contact Point Phone Layout</members>
+        <members>ContactPointTypeConsent-Contact Point Type Consent Layout</members>
         <members>Digital_Mortgages__c-Digital Mortgages Layout</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>Lead-Lead %28Marketing%29 Layout</members>
+        <members>Lead-Lead %28Sales%29 Layout</members>
+        <members>Lead-Lead %28Support%29 Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>OperatingHours-Operating Hours Layout</members>
+        <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
+        <members>Opportunity-Opportunity %28Sales%29 Layout</members>
+        <members>Opportunity-Opportunity %28Support%29 Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -29,6 +109,43 @@
     <types>
         <members>Digital_Mortgages_Developer</members>
         <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Custom%3A Marketing Profile</members>
+        <members>Custom%3A Sales Profile</members>
+        <members>Custom%3A Support Profile</members>
+		<members>Admin</members>
+        <name>Profile</name>
+    </types>
+	<types>
+	    <members>LeadStatus</members>
+		<members>OpportunityStage</members>
+		<name>StandardValueSet</name>
+	</types>
+    <types>
+        <members>LogACall</members>
+        <members>NewCase</members>
+        <members>NewContact</members>
+        <members>NewEvent</members>
+        <members>NewLead</members>
+        <members>NewNote</members>
+        <members>NewOpportunity</members>
+        <members>NewTask</members>
+        <members>SendEmail</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Case.Loan_Amount_should_be_less_than_Mortg</members>
+        <members>Case.SSN_Number_should_be_equal_to_9_digits</members>
+        <members>Case.loan_amount_should_be_greater_than_zero</members>
+        <members>Lead.SSN_Number_should_be_equal_to_9_digits</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Account.Billing</members>
+        <members>Campaign.ViewCampaignInfluenceReport</members>
+        <members>Opportunity.DeliveryStatus</members>
+        <name>WebLink</name>
     </types>
     <version>49.0</version>
 </Package>
